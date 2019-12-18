@@ -75,6 +75,7 @@ league_name = 'Outfield'
 #Rename File start name
 file_start_name = 'Fantasy_outfield_data_'
 
+
 for date in dates:
     #Format date so it can be used in URL
     date_url = date.strftime('%Y-%m-%d') 
@@ -94,7 +95,7 @@ for date in dates:
     browser.get(url)
       
     #put in delay so once page loads button will be clicked
-    time.sleep(5)
+    time.sleep(15)
     
     #Download csv file into download folder
     download_button_Xpath ='/html/body/app-root/div/div[1]/div/app-league-players/div/section/filter-panel/div/div[5]/div[3]/button[1]/span'
